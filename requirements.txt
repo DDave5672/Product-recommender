@@ -1,23 +1,23 @@
-# Web framework
 flask==2.3.3
 
-# Data & computation
+# Data + similarity
+numpy==1.23.5
 pandas==2.2.2
 scikit-learn==1.4.2
 
+# Torch (CPU only to avoid build issues)
 torch==2.0.1+cpu
-numpy==1.23.5
 --extra-index-url https://download.pytorch.org/whl/cpu
 
 # Image handling
 Pillow==10.3.0
 
-# CLIP from OpenAI GitHub (not pip clip!)
+# Text & CLI utilities
 ftfy==6.1.1
 regex==2023.12.25
 tqdm==4.66.4
-#git+https://github.com/openai/CLIP.git
 
-# Optional (faster CSV loading if used)
-# pyarrow==15.0.2
+# ⚠️ Leave this out temporarily — causes long builds on Render
+# git+https://github.com/openai/CLIP.git
+
 
