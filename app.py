@@ -92,5 +92,5 @@ def index():
     return render_template("index.html", recs=recs)
 
 if __name__ == "__main__":
+    import os
     app.run(debug=False, host="0.0.0.0", port=int(os.environ.get("PORT", 5000)))
-
