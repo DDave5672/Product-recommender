@@ -1,23 +1,14 @@
+setuptools>=42
+wheel
+
 flask==2.3.3
-
-# Data + similarity
-numpy==1.23.5
 pandas==2.2.2
+numpy==1.23.5
 scikit-learn==1.4.2
-
-# Torch (CPU only to avoid build issues)
 torch==2.0.1+cpu
 --extra-index-url https://download.pytorch.org/whl/cpu
-
-# Image handling
 Pillow==10.3.0
-
-# Text & CLI utilities
 ftfy==6.1.1
 regex==2023.12.25
 tqdm==4.66.4
-
-# ⚠️ Leave this out temporarily — causes long builds on Render
-# git+https://github.com/openai/CLIP.git
-
-
+# git+https://github.com/openai/CLIP.git   ← still recommended to leave this out for now
